@@ -1,0 +1,52 @@
+[
+    {
+        "Full_name": "Sajid Alam",
+        "User_name": "hasibur123",
+        "Email": "prottoyr@gmail.com",
+        "Phone_number": "01781161011",
+        "Age": "2022-06-08",
+        "Password": "Br28041999@",
+        "Confrim_password": "Br28041999@",
+        "Gender": "Male"
+    },
+    {
+        "Full_name": "Sajid Alam",
+        "User_name": "hasibur123",
+        "Email": "prottoyr@gmail.com",
+        "Phone_number": "01781161011",
+        "Age": "2022-06-27",
+        "Password": "Br28041999@",
+        "Confrim_password": "Br28041999@",
+        "Gender": "Male"
+    },
+    {
+        "Full_name": "Sajid Alam",
+        "User_name": "hasibur123",
+        "Email": "prottoyr@gmail.com",
+        "Phone_number": "01781161011",
+        "Age": "2022-06-07",
+        "Password": "Br28041999@",
+        "Confrim_password": "Br28041999@",
+        "Gender": "Female"
+    },
+    {
+        "Full_name": "Sajid Alam",
+        "User_name": "akash",
+        "Email": "prottoyr@gmail.com",
+        "Phone_number": "01781161011",
+        "Age": "2022-06-08",
+        "Password": "Ai28041999@",
+        "Confrim_password": "Ai28041999@",
+        "Gender": "Male"
+    },
+    {
+        "Full_name": "Sajid Alam",
+        "User_name": "mara",
+        "Email": "prottoyr@gmail.com",
+        "Phone_number": "01781161011",
+        "Age": "2022-06-15",
+        "Password": "Br28041999@",
+        "Confrim_password": "Br28041999@",
+        "Gender": "Male"
+    }
+]

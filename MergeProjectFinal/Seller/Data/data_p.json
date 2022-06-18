@@ -1,0 +1,66 @@
+[
+    {
+        "Product_tittle": "Frezze",
+        "Full_description": "It will save your electriciy",
+        "Pricing": "25000",
+        "Brand_name": "Walton",
+        "Catagory": "Electronics",
+        "ID": 1
+    },
+    {
+        "Product_tittle": "Football",
+        "Full_description": "Football, also called association football or soccer, is a game involving two teams of 11 players who try to maneuver the ball into the other team\u2019s goal without using their hands or arms. The team that scores more goals wins. Football is the world\u2019s most popular ball game in numbers of participants and spectators.",
+        "Pricing": "3000",
+        "Brand_name": "Nike",
+        "Catagory": "Sports",
+        "ID": 2
+    },
+    {
+        "Product_tittle": "Facewash",
+        "Full_description": "Bamboo Charcoal men facewash",
+        "Pricing": "320",
+        "Brand_name": "Clariss",
+        "Catagory": "Others",
+        "ID": 3
+    },
+    {
+        "Product_tittle": "CD",
+        "Full_description": "This is a gaming concole cd",
+        "Pricing": "200",
+        "Brand_name": "None",
+        "Catagory": "Sports",
+        "ID": 4
+    },
+    {
+        "Product_tittle": "Meat(cow)",
+        "Full_description": "Bramhan meat ",
+        "Pricing": "1300",
+        "Brand_name": "NONE",
+        "Catagory": "Others",
+        "ID": 5
+    },
+    {
+        "Product_tittle": "Pricess",
+        "Full_description": "Imported from ireland",
+        "Pricing": "30000",
+        "Brand_name": "Solfyna",
+        "Catagory": "Clothes",
+        "ID": 6
+    },
+    {
+        "Product_tittle": "Body shower",
+        "Full_description": "Made in italy",
+        "Pricing": "3300",
+        "Brand_name": "Laxy",
+        "Catagory": "Others",
+        "ID": 7
+    },
+    {
+        "Product_tittle": "Watch",
+        "Full_description": "This is a apple watch series-7",
+        "Pricing": "50000",
+        "Brand_name": "Apple",
+        "Catagory": "Electronics",
+        "ID": 8
+    }
+]
