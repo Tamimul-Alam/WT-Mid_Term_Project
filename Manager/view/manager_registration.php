@@ -1,13 +1,24 @@
 <?php include "../control/process.php"; ?>
 <html>
+<head>
+    <title>Ecommerece System</title>
+    <link rel="stylesheet" type="text/css" href="../css/reg_css.css">
+  </head>
+
     <body>
     <form action="" method="post" enctype="multipart/form-data">
-        <fieldset>
-        <h1 align="center">Manager Registration Form</h1>
-        </fieldset>
-        
-        <fieldset>
-        <legend align="center"><h2>Personal Information</h2></legend>
+    <div class="header">
+    <center>
+      <h1>Manager Registration Form</h1>
+    </center>
+  </div>
+
+  <div class="regibox">
+    <h1 align ="center" >Personal Information</h1>
+  </div>
+
+  <div class="frame">
+  </div> 
         <table align = "center" >
             <tr>
             <td>First Name :</td>
@@ -84,10 +95,11 @@
             </tr>
             
             </table>
-            </fieldset>
-            <br><br>
-            <fieldset>
-            <legend align = "center"><h3>Login Information</h3></legend>
+            <div class="regibox">
+               <h1 align ="center" >Login Information</h1>
+               </div>
+               <div class="frame">
+               </div> 
             <table align = "center" >
             <tr>
             <td>User Name :</td>
