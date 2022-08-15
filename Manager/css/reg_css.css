@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+    padding: 10px;
+    background: rgb(179, 207, 208);
+  }
+  
+  .header {
+    color: rgb(255, 255, 255);
+    font-family: sans-serif ;
+    padding: 30px;
+    text-align: left;
+    background: #24d7c2;
+  }
+  
+  .regibox {
+    background-color: lightcyan ;
+    margin-top: 10px;
+    border-left: 15px solid #41B3A3;
+    border-right: 15px solid #41B3A3;
+    padding: 4px;
+    font-size: 10px;
+    font-family: sans-serif;
+  }
+  
+  div.frame {
+    border-bottom: double;
+    color: #E85A4F; 
+    margin-bottom: 5px;
+    padding: 10px;
+  }
+  
