@@ -1,0 +1,47 @@
+.header {
+    color: rgb(255, 255, 255);
+    font-family: sans-serif ;
+    padding: 30px;
+    text-align: left;
+    background: #24d7c2;
+  }
+  body {
+    font-family: sans-serif;
+    padding: 10px;
+    background: rgb(179, 207, 208);
+    /* background-image: image/blur1.jpg; */
+  }
+   div.absolute{
+    margin-top: 20px;
+    top:0px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 3px solid;
+    border-color:rgb(13, 83, 118);
+    }
+    .regibox {
+        background-color: lightcyan ;
+        margin-top: 10px;
+        border-left: 15px solid #41B3A3;
+        border-right: 15px solid #41B3A3;
+        padding: 4px;
+        font-size: 10px;
+        font-family: sans-serif;
+      }
+      
+      div.frame {
+        border-bottom: double;
+        color: rgb(13, 83, 118); 
+        margin-bottom: 5px;
+        padding: 10px;
+      }
+      a{
+        color: rgb(0, 89, 148);
+      }
+      
+      a:hover{
+        color: rgb(255,0,68);
+      }
+      h1:hover{
+        color: rgb(75, 104, 182);
+      }
