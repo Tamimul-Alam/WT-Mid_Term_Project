@@ -3,20 +3,20 @@
 <head>
     <title>Ecommerece System</title>
     <link rel="stylesheet" type="text/css" href="../css/reg_css.css">
-  </head>
+    </head>
 
-    <body>
-    <form action="" method="post" enctype="multipart/form-data">
-    <div class="header">
-    <center>
+     <body>
+     <form action="" method="post" enctype="multipart/form-data">
+     <div class="header">
+     <center>
       <h1>Manager Registration Form</h1>
-    </center>
+     </center>
+     </div>
+    
+     <div class="regibox">
+     <h1 align ="center" >Personal Information</h1>
   </div>
-
-  <div class="regibox">
-    <h1 align ="center" >Personal Information</h1>
-  </div>
-
+  <div class ="absolute">
   <div class="frame">
   </div> 
         <table align = "center" >
@@ -95,9 +95,13 @@
             </tr>
             
             </table>
+            </div>
+            
             <div class="regibox">
+            
                <h1 align ="center" >Login Information</h1>
                </div>
+               <div class ="absolute">
                <div class="frame">
                </div> 
             <table align = "center" >
@@ -125,10 +129,14 @@
             
             </td>   
             </tr>
+            <table align ="center">
             <tr>
-            <td>
-            <input type="reset" value="Reset"> 
-            <input type="submit" name="submit" value="Register">
+            <td id="sub">
+            <input type="submit" class="button submit" name="submit" value="Register">
+            </td>
+            <td id="res">
+            <input type="reset"class="button reset" value="Reset"> 
+            
             </tr>
             </td>
             <tr>
@@ -136,6 +144,8 @@
             
             </tr>
             </table>
+            </table>
+            </div>
             </fieldset>
             </form>
             

@@ -6,14 +6,24 @@ if(!isset($_SESSION))
 include ("../control/loginvalidation.php"); 
 ?>
 <html>
+    <title>Ecommerece System</title>
+    <head>  
+    <link rel="stylesheet" type="text/css" href="../css/manager_login.css">
+    </head>
     <body>
         <form action="" method="post">
-    <fieldset>
-        <h1 align="center">Manager Login Form</h1>
-        </fieldset>
+        <div class="header_login">
+        <center>
+        <h1>Manager Login Form</h1>
+        </center>
+        </div>
         
-        <fieldset>
-        <legend align="center"><h2>Login Details</h2></legend>
+        <div class="regibox_login">
+        <h1 align ="center" >Login Information</h1>
+        </div>
+        <div class ="absolute_login">
+        <div class="frame_login">
+        </div>
         <table align = "center" >
         <tr>
             <td>User Name :</td>
@@ -27,9 +37,10 @@ include ("../control/loginvalidation.php");
             <?php echo $invalidedpassword; ?></td>
             </tr>
             <tr>
-            <td>
+
+            <td id="sub1">
             
-            <input type="submit" name="submit" value="login">
+            <input type="submit" class="button submit" name="submit" value="login">
             
             </td>
             </tr>

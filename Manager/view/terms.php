@@ -3,17 +3,28 @@
 ?>
 
 <html>
-
+<head>
+    <title>Ecommerece System</title>
+    <link rel="stylesheet" type="text/css" href="../css/terms.css">
+    </head>
     <body>
-        <form>
-                <fieldset>
-                <h1 align="center">Terms of service</h1></legend>
-            
-                </fieldset>
-                
-                    <br><br>
-                <fieldset>
-                <table>
+    
+
+     <body>
+     <form action="" method="post" enctype="multipart/form-data">
+     <div class="header">
+     <center>
+      <h1>Terms of service</h1>
+     </center>
+     </div>
+    
+     <div class="regibox">
+     <h1 align ="center" >Terms and Conditions</h1>
+  </div>
+  <div class ="absolute">
+  <div class="frame">
+  </div> 
+        <table align = "center" >
                     <tr>
                         <td> To access certain services offered by the platform, we may require that you create an account with us or provide personal information to complete the creation of an account. We may at any time in our sole and absolute discretion, invalidate the username and/or password without giving any reason or prior notice and shall not be liable or responsible for any losses suffered by, caused by, arising out of, in connection with or by reason of such request or invalidation.
 
@@ -28,7 +39,7 @@
                     </td>
                     </tr>
                 </table>
-                </fieldset>
+                
                
                 
 

@@ -3,22 +3,38 @@
 ?>
 
 <html>
+<head>
+    <title>Ecommerece System</title>
+    <link rel="stylesheet" type="text/css" href="../css/privacy.css">
+    </head>
 
     <body>
         <form>
-                <fieldset>
-                <h1 align="center">Privacy Policy</h1></legend>
-            
-                </fieldset>
+        <div class="header">
+        <center>
+        <h1>Privacy Policy</h1>
+        </center>
+        </div>
                 
                     <br><br>
-                <fieldset>
-                <table>
-                    <tr>
+                
+                
+                <div class="regibox">
+                <h1 align ="center" >Privacy Agreement</h1>
+                </div>
+                <div class ="absolute">
+            
+                <div class="frame">
+                 </div>
+                       <table>
+                      <tr>
                         <td> 
                         Please review our Privacy Agreement, which also governs your visit to the Site. The personal information / data provided to us by you or your use of the Site will be treated as strictly confidential, in accordance with the Privacy Agreement and applicable laws and regulations. If you object to your information being transferred or used in the manner specified in the Privacy Agreement, please do not use the Site.
-                        </td>
+                      </td>
                     </tr>
+                
+                  
+                   
                 
                      <tr>
                     <td>
@@ -26,7 +42,9 @@
                     </td>
                     </tr>
                 </table>
-                </fieldset>
+                </div>
+               
+                
                
                 
 
