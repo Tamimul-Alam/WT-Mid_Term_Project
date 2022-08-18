@@ -33,8 +33,8 @@ return $conn;
             return $conn->query($sqlstr);
     
         }
-        function searchadmin($conn,$tablename,$adminname){
-            $sqlstr="SELECT * FROM $tablename WHERE admin_name='$adminname'";
+        function searchmanager($conn,$tablename,$userna){
+            $sqlstr="SELECT * FROM $tablename WHERE username='$userna'";
             return $conn->query($sqlstr);
         }
         function searchadminemail($conn,$tablename,$adminemail){
