@@ -1,4 +1,5 @@
 <?php
+include("../model/manager_db.php");
 // session_start();
 error_reporting(0);
 
@@ -43,6 +44,7 @@ if(isset($_POST['submit']))
     $address=$_REQUEST["address"];
     $address1=$_REQUEST["address1"];
     $term=$_REQUEST["term"];
+
     // $gender=$_REQUEST["myGender"];
     //First Name
     if(empty($name))
@@ -213,6 +215,8 @@ else
 //Marriage status
 if(isset($_REQUEST["ms"]))
 {
+
+    $marriage_status=$_REQUEST["ms"];
     $validateradio1= "";
 }
 else
@@ -222,6 +226,7 @@ else
 //Previous Jpb Experience
 if(isset($_REQUEST["exp"]))
 {
+    $exp=$_REQUEST["exp"];
     $validateradio2= "";
 }
 else
@@ -301,65 +306,69 @@ if(empty($term))
 if($x==13)
 {
 
-    $formdata = array(
-        'First Name'=> $name,
-        'Last Name'=> $name1,
-        'Age'=> $age,
-        // 'Gender'=> $_POST["myGender"],
-        "Date of Birth"=>$dob,
-        'Email'=>$email,
-        'User_name'=>$valid_set_user,
-        'Password'=>$valid_set_pass,
-        'Confirm Password'=>$valid_con_pass,
-        // $password=$_REQUEST["pass"];
-        // $password1=$_REQUEST["pass1"];
-        // 'Checkbox'=>$validationcb
+//     $formdata = array(
+//         'First Name'=> $name,
+//         'Last Name'=> $name1,
+//         'Age'=> $age,
+//         // 'Gender'=> $_POST["myGender"],
+//         "Date of Birth"=>$dob,
+//         'Email'=>$email,
+//         'User_name'=>$valid_set_user,
+//         'Password'=>$valid_set_pass,
+//         'Confirm Password'=>$valid_con_pass,
+//         // $password=$_REQUEST["pass"];
+//         // $password1=$_REQUEST["pass1"];
+//         // 'Checkbox'=>$validationcb
         
-     );
-     $existingdata = file_get_contents('../data/data.json');
-     $tempJSONdata = json_decode($existingdata);
-     $tempJSONdata[] =$formdata;
-     //Convert updated array to JSON
+//      );
+//      $existingdata = file_get_contents('../data/data.json');
+//      $tempJSONdata = json_decode($existingdata);
+//      $tempJSONdata[] =$formdata;
+//      //Convert updated array to JSON
      
-    $jsondata = json_encode($tempJSONdata, JSON_PRETTY_PRINT);
-     if(file_put_contents("../data/data.json", $jsondata)) 
-     {
-         //write json data into data.json file
-          echo "Registration successfully done <br>";
-        //   header("location:../view/managerlogin.php");
-     }
-     else 
-     {
-        echo "Not Registered";
-     }
+//     $jsondata = json_encode($tempJSONdata, JSON_PRETTY_PRINT);
+//      if(file_put_contents("../data/data.json", $jsondata)) 
+//      {
+//          //write json data into data.json file
+//           echo "Registration successfully done <br>";
+//         //   header("location:../view/managerlogin.php");
+//      }
+//      else 
+//      {
+//         echo "Not Registered";
+//      }
         
     
-       // $data = file_get_contents("../data/data.json");
-       // $mydata = json_decode($data);
+//        // $data = file_get_contents("../data/data.json");
+//        // $mydata = json_decode($data);
     
     
-        //  echo "my value: ".$mydata[1]->lastName;
-      // 	 foreach($mydata as $myobject)
-       // {
-       // foreach($myobject as $key=>$value)
-       // {
-       //   echo "your ".$key." is ".$value."<br>";
-      // } 
-       // }
+//         //  echo "my value: ".$mydata[1]->lastName;
+//       // 	 foreach($mydata as $myobject)
+//        // {
+//        // foreach($myobject as $key=>$value)
+//        // {
+//        //   echo "your ".$key." is ".$value."<br>";
+//       // } 
+//        // }
 
     
-    }   //Get form data
+//     }   //Get form data
 
 
 
-   else
-  {
-    echo "<br> Registration Failed !!!! Please give all the informations Properly <br>";
-  }
+//    else
+//   {
+//     echo "<br> Registration Failed !!!! Please give all the informations Properly <br>";
+//   }
+    $mydb=new db();
+    $myconn=$mydb->opencon();
+    $mydb->insertmanager($name,$name1,$age,$gender,$dob,$number,$marriage_status,$religion,$exp,$email,$address,$address1,$file,$valid_set_user,$valid_set_pass,$valid_con_pass,"manager",$myconn);
+
 }
 
 
 }
 
-
+}
 ?>

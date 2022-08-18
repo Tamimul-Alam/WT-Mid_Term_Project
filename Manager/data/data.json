@@ -358,5 +358,15 @@
         "Password": "mima2020",
         "Confirm Password": "mima2020",
         "Checkbox": ",Java"
+    },
+    {
+        "First Name": "Tamimul",
+        "Last Name": "Alam",
+        "Age": "25",
+        "Date of Birth": "2022-08-27",
+        "Email": "example@gmail.com",
+        "User_name": "tamim56",
+        "Password": "123654789",
+        "Confirm Password": "123654789"
     }
 ]
