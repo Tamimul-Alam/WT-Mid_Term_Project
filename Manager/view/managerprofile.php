@@ -1,16 +1,7 @@
-<?php
 
-$cookie_name="Asif";
-$cookie_value="Manager!!!!";
-setcookie($cookie_name, $cookie_value,time() + 86400, "/");
+<?php include ("../control/manager_session.php") ?>
+<?php include ("../control/manager_cookie.php") ?>
 
-if(isset($_COOKIE[$cookie_name])) {
-    echo "Welcome again manager";
-  }else {
-    echo " <br/>Welcome to this page manager " .$cookie_name;
-}
-
-?>
 
 <html>
 

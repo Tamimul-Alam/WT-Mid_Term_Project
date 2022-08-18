@@ -1,6 +1,15 @@
 <?php
 include("../model/manager_db.php");
 // session_start();
+if(!isset($_SESSION)) 
+{ 
+    session_start(); 
+}
+
+if(isset($_SESSION["User_name"]))
+{
+    header("Location: ../view/managerprofile.php");
+}
 error_reporting(0);
 
 $validatename="";

@@ -28,8 +28,8 @@ return $conn;
             }
         
             
-        function checklogin($conn,$tablename,$admin_name,$password){
-            $sqlstr="SELECT admin_name,Password FROM $tablename WHERE admin_name='$admin_name' AND Password='$password'";
+        function checklogin($conn,$tablename,$user,$pass){
+            $sqlstr="SELECT username,password FROM $tablename WHERE username='$user' AND password='$pass'";
             return $conn->query($sqlstr);
     
         }
