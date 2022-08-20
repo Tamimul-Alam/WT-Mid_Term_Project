@@ -26,6 +26,8 @@ body {
     padding: 30px;
     text-align: left;
     background: #24d7c2;
+    opacity: 0.6;
+    backdrop-filter: blur(5px);
   }
   /* div.sticky{
     position: sticky;
@@ -43,6 +45,8 @@ body {
     padding: 4px;
     font-size: 10px;
     font-family: sans-serif;
+    opacity: 0.6;
+    backdrop-filter: blur(5px);
   }
   
   div.frame {
