@@ -125,7 +125,7 @@
             <table align = "center" >
             <tr>
             <td>User Name :</td>
-            <td><input type="text" name="user"  placeholder="User Name" id="usern" onkeyup="myAJAXname()" >
+            <td><input type="text" name="user"  placeholder="User Name" id="usern" onkeyup="checkusername()">
             <label id="nameerror"></label>
             <?php echo $validationuname; ?></td>
             </tr>

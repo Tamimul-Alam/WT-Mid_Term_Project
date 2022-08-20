@@ -122,6 +122,7 @@ function checkemail() {
         document.getElementById("nameerror").innerHTML="Username cannot be empty";
         return false;
     }
+    
     else{
         document.getElementById("nameerror").innerHTML="Username is correct";
         return true;
@@ -192,7 +193,7 @@ function myAJAXname(){
         document.getElementById("ajaxresponse").innerHTML = this.responseText;
       }
     };
-    xhttp.open("POST", "http://localhost/Manager/control/manager_checkname.php", true);
+    xhttp.open("REQUEST", "http://localhost/Manager/control/manager_checkname.php", true);
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhttp.send("manger="+userval);
   
