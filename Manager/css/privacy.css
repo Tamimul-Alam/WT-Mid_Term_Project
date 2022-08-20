@@ -9,6 +9,14 @@
     font-family: sans-serif;
     padding: 10px;
     background: rgb(179, 207, 208);
+    background-image: url(bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    overflow-x: hidden;
+    color: rgb(0, 0, 0);
     /* background-image: image/blur1.jpg; */
   }
    div.absolute{

@@ -10,6 +10,14 @@
     font-family: sans-serif;
     padding: 10px;
     background: rgb(179, 207, 208);
+    background-image: url(bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    overflow-x: hidden;
+    color: rgb(0, 0, 0);
     /* background-image: image/blur1.jpg; */
   }
    div.absolute_login{
@@ -55,6 +63,7 @@
   }
   .submit{
     background-color: rgb(53, 200, 200) ;
+    
     font-family:sans-serif;
     color:black;
     transition: 0.25s;
@@ -68,7 +77,9 @@
   }
   #sub1{
   
-    background: rgb(179, 207, 208);
+    background: rgb(250, 249, 249);
+    /* background-image: url(blur5.JPG); */
+    
   }
   a{
     color: rgb(0, 89, 148);

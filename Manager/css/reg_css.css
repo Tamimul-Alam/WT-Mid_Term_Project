@@ -2,6 +2,14 @@ body {
     font-family: sans-serif;
     padding: 10px;
     background: rgb(179, 207, 208);
+    background-image: url(bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    overflow-x: hidden;
+    color: rgb(0, 0, 0);
     /* background-image: image/blur1.jpg; */
   }
    div.absolute{
@@ -14,6 +22,7 @@ body {
     }
   .header {
     color: rgb(255, 255, 255);
+    
     font-family: sans-serif ;
     padding: 30px;
     text-align: left;
@@ -76,10 +85,12 @@ body {
   }
   #sub{
   
-    background: rgb(179, 207, 208);
+    background: rgb(230, 240, 240);
+    /* background-image: url(bg1.jpg); */
   }
   #res{
-    background: rgb(179, 207, 208);
+    background: rgb(204, 230, 218);
+    /* background-image: url(bg1.jpg); */
   }
   
   a{
