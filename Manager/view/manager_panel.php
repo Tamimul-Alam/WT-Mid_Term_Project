@@ -1,19 +1,24 @@
 <html>
-
+<head>
+    <title>E-commerce system</title>
+<link rel="stylesheet" type="text/css" href="../css/manager_panel.css">
+</head>
     <body>
+        
         <form>
-                <fieldset>
-                <h1 align="center">Managing Dashboard</h1></legend>
-            
-                </fieldset>
-                
-                    <br><br>
-                <fieldset>
-                    <div class="absolute">
-                <table>
-                <legend align="center"><h2>Manager Panel</h2></legend>
-                
-
+        <div class="header">
+        <center>
+        <h1>Buyer Dashboad</h1>
+        </center>
+        </div>   
+        <div class="regibox">
+        <h1 align ="center" >Buyer Panel</h1>
+        </div>
+        <div class ="absolute">
+        <div class="frame">
+        </div>
+        <table>
+        <br><br>
                   <?php 
                    $servername="localhost";
                    $username="root";
@@ -28,16 +33,16 @@
                   {
                   echo "error connecting database";
                    }
-                   $sql="SELECT id,firstname,lastname,age,gender,dob,phone,marriage_status,religion,previous_job_exp,email,username FROM $table";
+                   $sql="SELECT id,firstname,lastname,age,gender,dob,phone,religion,email,username,password,com_password FROM $table";
                    $res=$conn->query($sql);
                    if($res->num_rows>0){
                     
                     echo "<table border='2'>";
                     
-                    echo "<tr><th>ID</th><th>First Name</th><th>Last Name</th><th>Age</th><th>Gender</th><th>Date of birth</th><th>Phone number</th><th>Marriage status</th><th>religion</th><th>Previous_job_exp</th><th>E-mail</th><th>Username</th></tr>";
+                    echo "<tr><th>ID</th><th>First Name</th><th>Last Name</th><th>Age</th><th>Gender</th><th>Date of birth</th><th>Phone number</th><th>religion</th><th>E-mail</th><th>Username</th><th>Password</th><th>Confirm Password</th></tr>";
                     while ($row=$res->fetch_assoc()){
                         echo "<tr><td>".$row["id"]."</td><td>".$row["firstname"]."</td><td>".$row["lastname"].
-                        "</td><td>".$row["age"]."</td><td>".$row["gender"]."</td><td>".$row["dob"]."</td><td>".$row["phone"]."</td><td>".$row["marriage_status"]."</td><td>".$row["religion"]."</td><td>".$row["previous_job_exp"]."</td><td>".$row["email"]."</td><td>".$row["username"]."</td><td>"."</td></tr>";
+                        "</td><td>".$row["age"]."</td><td>".$row["gender"]."</td><td>".$row["dob"]."</td><td>".$row["phone"]."</td><td>".$row["religion"]."</td><td>".$row["email"]."</td><td>".$row["username"]."</td><td>".$row["password"]."</td><td>".$row["com_password"]."</td><td>"."</td></tr>";
                     }
                     echo"</table>";
                     
@@ -45,10 +50,11 @@
                    }
                    else{echo"No Record found";}
                    ?>
+                   <br>
                    <tr>
                    <td>
                    <input type="text" name="delete">
-                   <input type="submit" name="delbtn" Value="Delete">
+                   <input type="submit" class="button submit"  name="delbtn" Value="Delete">
                    </td>
 
                    </tr>
@@ -77,9 +83,10 @@ if(isset($_POST['delbtn'])){
 }
 
   ?>
-  <td><a href = "managerprofile.php">Back to Profile</a></td>
+  <br><br>
+                <tr><td><a href = "managerprofile.php">Back to Profile</a></td></tr>
                 </table>
-                </fieldset>
+                
                
                 
 

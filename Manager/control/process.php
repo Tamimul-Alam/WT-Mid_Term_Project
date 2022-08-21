@@ -273,7 +273,7 @@ if(move_uploaded_file($_FILES["cv"]["tmp_name"],"../uploads/" . $_FILES["cv"]["n
 
 else
 {
-    echo "uploading error";
+    echo "Registration Failed";
     echo $_FILES["cv"]["error"];
 }
 //Preffered Language

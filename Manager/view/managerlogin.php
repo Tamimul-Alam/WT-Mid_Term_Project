@@ -47,7 +47,12 @@ include ("../control/loginvalidation.php");
 
               <tr>
                 <td> <a href = "manager_registration.php">Not have an account? Register</a>
-              </tr>
+                </tr>
+                <tr>
+                <td><a href="forget_pass.php"> Forget Password? </a></td>
+                </tr>
+           
+              
 </fieldset>
 </form>
 </body>
