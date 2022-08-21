@@ -82,29 +82,30 @@
                    </td>
                    </tr>
                    <?php
+                   //Delete Information from Database
                    $servername="localhost";
                    $username="root";
                    $password="";
                    $dbname="ecommerce system";
                    $table="manager";
                     //create connection
-$conn=new mysqli($servername,$username,$password,$dbname);
+                   $conn=new mysqli($servername,$username,$password,$dbname);
 
-//connection check
-if($conn->connect_error){
-   echo "error connecting database";
-}
+                   //connection check
+                   if($conn->connect_error){
+                      echo "error connecting database";
+                       }
 
-if(isset($_REQUEST['delbtn'])){
-    $id=$_REQUEST['delete'];
-    $sql="DELETE FROM $table WHERE id='$id'";
-    if($conn->query($sql)){
-        echo "Record deleted successfully";
-    }
+                      if(isset($_REQUEST['delbtn'])){
+                         $id=$_REQUEST['delete'];
+                         $sql="DELETE FROM $table WHERE id='$id'";
+                         if($conn->query($sql)){
+                         echo "Record deleted successfully";
+                         }
     
 
-}
-  ?>
+                               }
+                    ?>
 
 
 
