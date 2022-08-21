@@ -33,18 +33,25 @@ return $conn;
             return $conn->query($sqlstr);
     
         }
-        function searchmanager($conn,$tablename,$userna){
-            $sqlstr="SELECT * FROM $tablename WHERE username='$userna'";
+        function searchmanager($conn,$tablename,$user){
+            $sqlstr="SELECT * FROM $tablename WHERE firstname='$user'";
             return $conn->query($sqlstr);
         }
         function searchadminemail($conn,$tablename,$adminemail){
             $sqlstr="SELECT * FROM $tablename WHERE email='$adminemail'";
             return $conn->query($sqlstr);
         }
-        function Updateprofile($conn,$tablename,$admin_email,$password,$confirm_password){
+        function Updateprofile($conn,$tablename,$id,$pass,$pass1){
         
-            $sqlstr="UPDATE $tablename SET password='$password',confirm_password='$confirm_password'  WHERE email='$admin_email'";
-            return $conn->query($sqlstr);
+            $sqlstr="UPDATE $tablename SET password='$pass',com_password='$pass1'  WHERE id='$id'";
+            $res=$conn->query($sqlstr);
+            if($res){
+                header("Location:../view/managerlogin.php");
+
+            }
+            else{
+                echo "Password not updated".$conn->error;//error debug using this property
+            }
         }
         
         function Deleteadmin($conn,$tablename,$admin_name){

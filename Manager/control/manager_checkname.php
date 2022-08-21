@@ -2,11 +2,12 @@
 
 include("../model/manager_db.php");
 
-$userna=$_REQUEST["usern"];
-if(!empty($userna)){
+
+$user=$_REQUEST["f_name"];
+if(!empty($user)){
     $mydb=new db();
     $conn=$mydb->opencon();
-    $result=$mydb->searchmanager($conn,"manager",$userna);
+    $result=$mydb->searchmanager($conn,"manager",$user);
     if($result->num_rows>0){
         echo "Manager Name Already Exist";
     }

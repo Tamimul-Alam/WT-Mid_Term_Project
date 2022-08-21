@@ -186,7 +186,7 @@ function checkfile() {
   //ajax for Username
 function myAJAXname(){
     //aplly ajax on username
-    var userval=document.getElementById("usern").value;
+    var userval=document.getElementById("f_name").value;
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
@@ -231,4 +231,18 @@ function myAJAXname(){
       }
     });
   });
-  
+
+
+function showHint(str) {
+  if (str.length == 0) { 
+    document.getElementById("txtHint").innerHTML = "";
+    return;
+  }
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("txtHint").innerHTML =
+    this.responseText;
+  }
+  xhttp.open("GET", "../control/sugession.php?q="+str);
+  xhttp.send();   
+}

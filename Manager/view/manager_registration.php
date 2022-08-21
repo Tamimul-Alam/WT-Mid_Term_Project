@@ -1,5 +1,6 @@
 <?php include "../control/process.php"; ?>
 
+
 <html>
 <head>
     <title>Ecommerece System</title>

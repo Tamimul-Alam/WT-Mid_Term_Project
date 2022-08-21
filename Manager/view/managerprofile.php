@@ -16,13 +16,25 @@
       <h1>Welcome to your Managing Profile</h1>
      </center>
      </div>
+     <div class="sticky">
+        <div class="topnav">
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">Contact With Users</a>
+        <a href="#">About US</a>
+        <a href="https://github.com/Tamimul-Alam" target="_blank">Github Profile</a>
+        <a href= "https://www.udemy.com/" target="_blank">Education sites</a>
+        <a href="manager_panel.php">Buyer Panel</a>
+        <a href="manager_panel.php">Seller Panel</a>
+        <a href="../control/logout.php">Logout</a>
+        
+        </div>
+        </div>
     
      <div class="regibox">
      <h1 align ="center" >Manager Panel</h1>
-  </div>
-  <div class ="absolute">
-  <div class="frame">
-  </div> 
+     </div>
+     <div class ="absolute">
+     <div class="frame">
+     </div> 
                
                 
                     <br><br>
@@ -64,10 +76,10 @@
                    ?>
                    <tr>
                    <td>
-                   <input type="text" name="delete">
+                   <p>Suggestions: <span id="txtHint"></span></p> 
+                   <input type="text" name="delete" id="txt1" onkeyup="showHint(this.value)">
                    <input type="submit" class="button submit" name="delbtn" Value="Delete">
                    </td>
-
                    </tr>
                    <?php
                    $servername="localhost";
@@ -93,16 +105,17 @@ if(isset($_REQUEST['delbtn'])){
 
 }
   ?>
+
+
+
+
+
                 </table>
                
                
                 
-                <tr> <td> <a href = "https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">Contact With Users</a></td></tr>
-                <tr> <td> <a href = "https://github.com/Tamimul-Alam" target="_blank">Github Profile</a></td></tr>
-                <tr> <td> <a href = "https://www.udemy.com/" target="_blank">Education sites</a></td></tr>
-                <td><a href = "manager_panel.php">Manager Panel</a></td>
-                <tr> <td> <a href="../control/logout.php" name ="Logout">Logout</a></td></tr>
-        
+
+                <script src="../js/manager_reg_js_validation.js"></script>
         <!-- </div> -->
     </body>
     </form>
